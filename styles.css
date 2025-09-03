@@ -16,7 +16,7 @@ a:hover{text-decoration:underline}
   display:flex;
   align-items:center;
   justify-content:center;
-  min-height:340px;
+  min-height:220px;
   text-align:center;
   background:#fff;
   overflow:hidden;
@@ -25,7 +25,7 @@ a:hover{text-decoration:underline}
 .header::before{
   content:"";
   position:absolute;inset:0;
-  background:url('./assets/img/header-sandworks-circuit.png') center/cover no-repeat;
+  background:url('./assets/img/SanDworksHeader.png') center/cover no-repeat;
   opacity:.95;
 }
 .header .inner{position:relative;z-index:2;padding:40px 20px;background:rgba(255,255,255,.65);backdrop-filter:blur(3px);border-radius:16px}
@@ -46,5 +46,6 @@ h1{font-size:48px;letter-spacing:.2px;margin:0 0 8px}
 small.muted{color:#94a3b8}
 @media (max-width:640px){
   h1{font-size:36px}
-  .header .inner{padding:28px 14px}
+  .header{min-height:120px;}
+  .header .inner{padding:18px 8px}
 }
