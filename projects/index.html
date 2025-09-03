@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects — SanDworks</title>
+  <link rel="icon" href="../assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../styles.css">
+  <meta name="description" content="Explore SanDworks projects: Android apps, indie games, and practical on-device AI.">
+</head>
+<body>
+  <header class="header" style="min-height:220px">
+    <div class="inner container">
+      <h1>Projects</h1>
+      <div class="tagline">APPS · GAMES · AI</div>
+      <div class="badges"><span>Android</span><span>On-device AI</span><span>Material Design</span></div>
+    </div>
+  </header>
+  <main class="container">
+    <section class="section">
+      <h2>Lineup</h2>
+      <div class="grid" id="grid"></div>
+    </section>
+    <section class="section">
+      <h2>Roadmap</h2>
+      <p>We ship in small, frequent updates. Follow our GitHub or Play listings for public roadmaps and release notes.</p>
+    </section>
+  </main>
+  <footer class="footer"><small class="muted">© {year} SanDworks</small></footer>
+  <script>
+    const data = [
+      {title:"NammaCity", blurb:"Citizen-first city tools for mobility, maps, and civic features.", cta:"View on Google Play", href:"https://play.google.com/store/apps/details?id=com.sandworks.nammacity"},
+      {title:"DashcamPRO", blurb:"Dash-cam with practical ADAS. Optimized for on-device processing.", cta:"Join waitlist", href:"mailto:nammacitydev@gmail.com?subject=DashcamPRO%20Waitlist"},
+      {title:"Podverse", blurb:"Minimal, fast podcast player with Firebase sync.", cta:"Join waitlist", href:"mailto:nammacitydev@gmail.com?subject=Podverse%20Waitlist"}
+    ];
+    const grid = document.getElementById('grid');
+    data.forEach(x=>{
+      const d = document.createElement('div');
+      d.className = 'card';
+      d.innerHTML = `<h3>${x.title}</h3><p>${x.blurb}</p><a class="cta" href="${x.href}" target="_blank" rel="noopener">${x.cta}</a>`;
+      grid.appendChild(d);
+    });
+    document.body.innerHTML = document.body.innerHTML.replace('{year}', new Date().getFullYear());
+  </script>
+</body>
+</html>

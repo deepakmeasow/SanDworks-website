@@ -1,54 +1,69 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="google-adsense-account" content="ca-pub-8584353138263880">
-<title>SanDworks</title>
-<style>
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8fafc;
-}
-header {
-    background-color: #4f46e5;
-    color: white;
-    padding: 20px 40px;
-    text-align: center;
-}
-section {
-    padding: 40px;
-}
-.footer {
-    background-color: #e5e7eb;
-    padding: 10px;
-    text-align: center;
-    font-size: 0.8em;
-}
-a {
-    color: #4f46e5;
-    text-decoration: none;
-}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SanDworks — Apps · Games · AI</title>
+  <meta name="description" content="SanDworks crafts polished Android apps, games, and practical on-device AI. Made in Bengaluru, built for everyone.">
+    <link rel="icon" href="./assets/icons/favicon.svg" type="image/svg+xml">
+    <link rel="preload" as="image" href="./assets/img/SanDworksHeader.png">
+  <link rel="stylesheet" href="./styles.css">
+  <meta property="og:title" content="SanDworks — Apps · Games · AI">
+  <meta property="og:description" content="Polished Android apps, indie games, and practical on-device AI.">
+  <meta property="og:type" content="website">
 </head>
 <body>
-<header>
-<img src="logo_small128.png" alt="SanDworks logo" style="width:150px;height:auto;margin:0 auto;display:block;" />
-<h1>Welcome to SanDworks</h1>
-<p>Building solutions that work.</p>
-</header>
-<section>
-<h2>About</h2>
-<p>SanDworks is a creative studio focused on crafting digital products and experiences. Stay tuned as we build our portfolio.</p>
-</section>
-<section>
-<h2>Contact</h2>
-<p>Reach out via <a href="mailto:contact@sandworks.tech">contact@sandworks.tech</a>.</p>
-</section>
-<div class="footer">
-<p>&copy; 2025 SanDworks. All rights reserved.</p>
-</div>
+  <header class="header">
+    <div class="inner container">
+      <h1 aria-label="SanDworks">SanDworks</h1>
+      <div class="tagline">APPS · GAMES · AI</div>
+      <div class="badges">
+        <span>Android</span><span>Material Design</span><span>On‑device AI</span><span>Bengaluru</span>
+      </div>
+      <a class="cta" href="#apps">Explore our work</a>
+    </div>
+  </header>
+    <img src="./assets/img/SanDworksHeader.png" alt="SanDworks header" style="width:100%;max-width:1000px;display:block;margin:0 auto 1.5rem auto;">
+
+  <main class="container">
+    <section id="about" class="section">
+      <h2>About</h2>
+      <p>SanDworks is a Bengaluru‑based studio crafting polished Android apps, games, and AI‑powered experiences.
+      We ship fast, feel smooth, look great, and respect users. Our AI features are practical and privacy‑minded,
+      designed to work on‑device whenever possible.</p>
+    <p class="logo-strip"><img src="./assets/img/SanDworks.png" alt="SanDworks logo" style="max-width:340px;width:100%;border-radius:12px;border:1px solid #e5e7eb;"></p>
+    </section>
+
+    <section id="apps" class="section">
+      <h2>Featured</h2>
+      <div class="grid">
+        <div class="card"><h3>NammaCity</h3><p>Citizen‑first city tools, mobility & maps utilities with a local focus.</p><a class="cta" href="#" target="_blank" rel="noopener">Coming to Play</a></div>
+  <div class="card"><h3>DashcamPRO</h3><p>Dash‑cam with practical ADAS—optimized for on‑device processing.</p><a class="cta" href="mailto:nammacitydev@gmail.com?subject=SanDworks%20App%20Waitlist" target="_blank" rel="noopener">Join waitlist</a></div>
+  <div class="card"><h3>Podverse</h3><p>Minimal, fast podcast player with Firebase sync.</p><a class="cta" href="mailto:nammacitydev@gmail.com?subject=SanDworks%20App%20Waitlist" target="_blank" rel="noopener">Join waitlist</a></div>
+        <div class="card"><h3>Indie Games</h3><p>High‑polish casual and action prototypes built with performance in mind.</p><a class="cta" href="#" target="_blank" rel="noopener">See projects</a></div>
+      </div>
+    </section>
+
+    <section id="principles" class="section">
+      <h2>Principles</h2>
+      <div class="grid">
+        <div class="card"><h3>Quality first</h3><p>Smooth performance, clean Material‑forward design, and reliability.</p></div>
+        <div class="card"><h3>Practical AI</h3><p>Features with purpose—often on‑device for speed & privacy.</p></div>
+        <div class="card"><h3>Listen & iterate</h3><p>Ship → learn → improve with transparent roadmaps.</p></div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>Have feedback or partnership ideas? Write to us.</p>
+  <p><a class="cta" href="mailto:nammacitydev@gmail.com">nammacitydev@gmail.com</a></p>
+      <p><small class="muted">© {year} SanDworks. Made in India.</small></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <small class="muted">This site is open source — <a href="https://github.com/deepakmeasow/SanDworks-website" target="_blank" rel="noopener">GitHub repo</a></small>
+  </footer>
+  <script>document.body.innerHTML=document.body.innerHTML.replace('{year}', new Date().getFullYear());</script>
 </body>
 </html>
